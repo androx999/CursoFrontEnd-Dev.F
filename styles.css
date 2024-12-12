@@ -1,11 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+    font-family: 'Georgia', serif; /* Actualiza la fuente principal */
+    color: #333; /* Define un color base para el texto */
 }
-
 header {
     background-color: #4CAF50;
     color: white;
@@ -15,6 +11,11 @@ header {
 
 header h1 {
     margin: 0;
+}
+
+header, footer {
+    font-family: inherit; /* Hereda la fuente del body */
+    color: inherit; /* Hereda el color del body */
 }
 
 nav ul {
@@ -28,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    /* No es necesario especificar 'color' aquí si ya se hereda de nav */
     text-decoration: none;
 }
 
@@ -43,6 +44,11 @@ section#temas article {
     padding: 10px;
     border-radius: 5px;
     max-width: 600px;
+}
+
+section#temas article h3 {
+    font-family: inherit; /* Hereda la fuente del body */
+    color: #4CAF50; /* Sobrescribe el color para destacar */
 }
 
 form textarea {
@@ -64,4 +70,15 @@ form button {
 
 form button:hover {
     background-color: #45a049;
+}
+
+.destacado {
+    font-family: inherit; /* Usa la misma fuente base */
+    font-size: 1.2em; /* Aumenta el tamaño relativo */
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.sombra {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
